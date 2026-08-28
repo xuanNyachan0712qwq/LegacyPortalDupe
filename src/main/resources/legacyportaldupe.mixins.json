@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.example.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"EntityMixin",
+		"ProjectileInvoker",
+		"LegacyPotionPortalDelayMixin",
+		"LegacyThrowableProjectileMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
