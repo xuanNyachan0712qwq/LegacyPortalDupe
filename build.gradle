@@ -3,6 +3,10 @@ plugins {
 	id 'maven-publish'
 }
 
+base {
+	archivesName = "LegacyPortalDupe"
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -17,7 +21,6 @@ loom {
 	mods {
 		"modid" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 }
