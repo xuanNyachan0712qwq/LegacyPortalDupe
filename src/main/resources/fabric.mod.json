@@ -1,33 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "legacyportaldupe",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Legacy Portal Dupe",
+	"description": "Restores the legacy cross-dimensional splash potion residual-tick behavior from Minecraft 1.21.1.",
 	"authors": [
-		"Me!"
+		"xuanNyachan0712qwq"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/xuanNyachan0712qwq/LegacyPortalDupe"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/legacyportaldupe/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.example.LegacyPortalDupe"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
 		]
 	},
 	"mixins": [
-		"legacyportaldupe.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"legacyportaldupe.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
